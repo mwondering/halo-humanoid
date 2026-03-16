@@ -242,23 +242,57 @@
           <div class="column has-text-centered">
             <!-- TODO: Replace with your paper title -->
             <h1 class="title is-1 publication-title">HALO:Closing Sim-to-Real Gap for Heavy-loaded Humanoid Agile Motion Skills via Differentiable Simulation</h1>
-            <div class="is-size-5 publication-authors"> 
-              <!-- TODO: Replace with your paper authors and their personal links -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Xingyi Wang</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Chenyun Zhang</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Weiji Xie</a><sup>*</sup>,
-                  </span>
+                  <div class="is-size-5 publication-authors"> 
+                    <!-- Authors with affiliation superscripts - Reduced spacing -->
+                    <span class="author-block">
+                      <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Xingyi Wang</a><sup>1,2*</sup>,</span>
+                    <span class="author-block">
+                      <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Chenyun Zhang</a><sup>1*</sup>,</span>
+                    <span class="author-block">
+                      <a href="https://shi-soul.github.io/" target="_blank">Weiji Xie</a><sup>1,3*</sup>,</span>
+                    <span class="author-block">
+                      <a href="FIFTH AUTHOR PERSONAL LINK" target="_blank">Chao Yu</a><sup>4</sup>,</span>
+                    <span class="author-block">
+                      <a href="SIXTH AUTHOR PERSONAL LINK" target="_blank">Wei Song</a><sup>2</sup>,</span>
+                    <span class="author-block">
+                      <a href="https://baichenjia.cn/" target="_blank">Chenjia Bai</a><sup>1†</sup>,</span>
+                    <span class="author-block">
+                      <a href="EIGHTH AUTHOR PERSONAL LINK" target="_blank">Shiqiang Zhu</a><sup>2†</sup>
+                    </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                    <!-- <span class="author-block">Institution Name<br>Conference name and year</span> -->
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <!-- Affiliations -->
+                    <span class="author-block">
+                      <sup>1</sup>Institute of Artificial Intelligence (TeleAI), China Telecom<br>
+                      <sup>2</sup>Zhejiang University<br>
+                      <sup>3</sup>Shanghai Jiao Tong University<br>
+                      <sup>4</sup>Lumos Robotics<br>
+                    </span>
                   </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <!-- Contribution notes - Larger font size -->
+                    <span class="eql-cntrb">
+                      <small><sup>*</sup>Equal Contribution &nbsp;&nbsp; <sup>†</sup>Corresponding Author</small>
+                    </span>
+                  </div>
+
+                  <!-- Add custom CSS for tighter spacing -->
+                  <style>
+                    .publication-authors .author-block {
+                      margin-right: 0.2rem !important;
+                      margin-left: 0.2rem !important;
+                    }
+                    
+                    .publication-authors sup {
+                      margin-left: 0.1rem;
+                    }
+                    
+                    .eql-cntrb small {
+                      font-size: 0.85rem !important;
+                    }
+                  </style>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
@@ -285,15 +319,7 @@
                   </span> -->
 
                   <!-- TODO: Replace with your GitHub repository URL -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code coming soon</span>
-                  </a>
-                </span>
+
 
                 <!-- TODO: Update with your arXiv paper ID -->
                 <span class="link-block">
@@ -305,6 +331,20 @@
                   <span>arXiv</span>
                 </a>
               </span>
+
+
+                <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code coming soon</span>
+                  </a>
+                </span>
+
+
+
             </div>
           </div>
         </div>
@@ -317,15 +357,19 @@
 <!-- Teaser video-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
     <div class="hero-body">
+      <h2 class="title is-3">Demo</h2>
       <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
+      <video poster="" id="tree" autoplay controls muted loop playsinline height="100%" preload="metadata">
         <!-- TODO: Add your video file path here -->
         <source src="static/videos/sysid_demo_01.mp4" type="video/mp4">
+      </video>
       <!-- TODO: Replace with your video description -->
       <!-- <h2 class="subtitle has-text-centered">
         Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
       </h2> -->
+    </div>
     </div>
   </div>
 </section>
